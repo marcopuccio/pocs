@@ -1,0 +1,19 @@
+{
+  "name": "webpack-poc",
+  "version": "1.0.0",
+  "description": "webpack poc",
+  "main": "entry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --progress --colors",
+    "watch": "webpack --progress --colors --watch",
+    "build-no-config": "webpack ./entry.js  bundle.js --module-bind 'css=style!css'"
+  },
+  "author": "Marsxn",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^1.14.0",
+    "css-loader": "^0.26.1",
+    "style-loader": "^0.13.1"
+  }
+}
