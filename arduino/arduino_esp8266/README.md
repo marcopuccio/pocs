@@ -1,6 +1,10 @@
-# esp8266 and Arduino Uno
+# Arduino Uno + esp8266
 
-Arduino and esp8366 WiFi connection using SoftwareSerial and SerialESP8266wifi.
+Arduino Uno R3 and esp8366 WiFi connection using SoftwareSerial and SerialESP8266wifi.
+
+### Hardware
+- Arduino Uno R3
+- ESP82666 Module
 
 ### Requirements:
 - [SerialESP8266wifi](https://github.com/ekstrand/ESP8266wifi)
