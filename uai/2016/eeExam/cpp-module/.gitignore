@@ -1,0 +1,11 @@
+*.slo
+*.lo
+*.o
+*.so
+*.dylib
+*.lai
+*.la
+*.a
+
+# DATA
+*.csv

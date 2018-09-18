@@ -1,0 +1,2 @@
+To launch this app, close all Chrome's windows before than type the next command: 
+google-chrome --allow-file-access-from-files

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Web Workers!</title>
+  <!-- Css -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation-flex.min.css"> 
+  <link rel="stylesheet" type="text/css" href="app.css"> 
+</head>
+<body>
+  <main>
+    <section class="requirements">
+      <div class="row align-center">
+        <div class="small-12 column text-center">
+          <h1>Webworkers!</h1>
+          <h2>Puccio Marco</h2>
+        </div>
+        <div class="small-10 column requirements-detail">
+          <p>
+            Hacer click en "Comenzar" para empezar usar aplicación. 
+            Este botón, habilitará el formulario de edicion y lanzará los webworkers. Una vez presionado, este botón se 
+            ocultará y habilitará el boton de Terminar. Una vez presionado este último, no se podrá usar la aplicación 
+            hasta recargar la ventana. 
+          </p>
+          <p>
+            El webworker "date.js" imprime la fecha en cada evento "SUBMIT" del form.
+            El webworker "feed.js" tomará los datos ingresados en el formulario convertidos en JSON por Jquery y 
+            actualizará el sector de última noticia con un segundo de demora luego de que se dispare el evento "SUBMIT".
+          </p>
+        </div>
+        <div class="small-12 column text-center">
+          <a href="#" class="button" id="webworker-starter">Comenzar</a>
+          <a href="#" class="button hide" id="webworker-killer">Terminar</a>
+        </div>
+      </div>
+     </section>
+
+     <section class="panel">
+      <div class="row align-center">
+        <div class="small-11 large-8 column">
+          <h1 class="text-center">Ultimo Momento!</h1>
+          <div class="notice-timestamp">
+           <span class="underlined">Fecha y hora de envío:</span> <span class="bold" id="the-date"></span>
+          </div>
+          <div class="last-minute-news">
+            <h3 id="title"></h1>
+            <p id="content"></p>
+          </div>
+        </div>
+        <div class="small-11 large-4 column">
+          <form data-feed-form>
+            <div class="row">
+              <div class="small-12 column">
+                <label>Titulo
+                  <input type="text" name="title" placeholder="Título" disabled>
+                </label>
+              </div>
+              <div class="small-12 column">
+                <label>Contenido
+                  <textarea name="content" placeholder="Contenido" disabled></textarea>
+                </label>
+              </div>
+              <div class="small-12 column text-center">
+              <button type="submit" class="button" disabled>Enviar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="row column text-center">
+      <small><a href="https://github.com/marsxn/college-programming/tree/master/2016/webWorkers">Ver código fuente en GitHub. <img class="github-logo" src="octocat.png" alt="GitHub Logo."></a></small>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+/* Requirements section CSS*/
+.requirements {
+    padding: 50px 0;
+    background-color: crimson;
+    color: white; 
+}
+.requirements h1,
+.requirements h2 {
+    text-shadow: 1px 1px 1px black;
+}
+.requirements .requirements-detail {
+    margin: 20px 0;
+}
+/* Panel section CSS */
+.panel {
+    padding: 50px 0 70px 0;
+}
+.panel .notice-timestamp {
+    padding: 20px;
+    background-color: lightgrey;
+    border-radius: 25px;
+    margin-bottom: 10px;     
+}
+.panel .last-minute-news {
+    padding: 50px 20px;
+    background-color: lightgrey;
+    border-radius: 25px;
+}
+.panel .last-minute-news h3 {
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+.panel form {
+    padding: 16px;
+    margin: 30px 10px;
+    border: 1px solid lightgrey;
+}
+
+/* Footer CSS*/
+footer {
+    background-color: aliceblue;
+    padding: 30px 0;
+}
+footer img.github-logo {
+    max-width: 5%;
+}
+.bold {
+    font-weight: bold;
+}
+.underlined {
+    text-decoration: underline;
+}
